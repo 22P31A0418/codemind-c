@@ -2,20 +2,16 @@
 int main()
 {
     int i,j,n;
-    scanf("%d",&n);
-    //printf("%d",n);
-    for(i=1;i<=n;i++)
     {
-        for(j=1;j<=n;j++)
+        scanf("%d",&n);
+        for(i=n;i>0;i--)
         {
-            if(i==j)
+            for(j=n;j>0;j--)
             {
-                printf("0");
+                printf("%d ",j);
             }
-            else
-            printf("x");
-        }
-        printf("
+            printf("
 ");
+        }
     }
 }
