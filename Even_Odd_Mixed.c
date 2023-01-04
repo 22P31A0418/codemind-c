@@ -1,20 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,e=0,o=0,b;
+    int n,i,b,k=0,e=0,o=0;
     scanf("%d",&n);
     for(i=n;i>0;i=i/10)
     {
         b=i%10;
+        k++;
         if(b%2==0)
         e++;
-        else if(b%2==1)
+        if(b%2!=0)
         o++;
     }
-    if(e!=0 && o!=0)
-    printf("Mixed");
-    else if(e!=0 && o==0)
+    if(e==k)
     printf("Even");
-    else
+    else if(k==o)
     printf("Odd");
+    else
+    printf("Mixed");
 }
