@@ -5,5 +5,5 @@ int main()
     scanf("%d",&h);
     float c;
     c=2.54*h;
-    printf("%0.2f",c);
+    printf("%.2f",c);
 }
