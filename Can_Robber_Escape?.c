@@ -1,24 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int i,n;
     scanf("%d",&n);
     int arr[n];
-    int c=1,i;
+    int c=1;
     for(i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
-        if(arr[i]>=n)
-        {
-            c=0;
-        }
+      scanf("%d",&arr[i]);
+      if(arr[i]>=n)
+      {
+          printf("NO");
+          c=0;
+          break;
+      }
     }
-    if(c==0)
-    {
-        printf("NO");
-    }
-    else
-    {
-        printf("YES");
-    }
+    if(c==1)
+    printf("YES");
 }
