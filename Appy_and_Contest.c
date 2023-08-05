@@ -14,10 +14,10 @@ int main(void)
         else
         count=n/a+n/b-2*(n/(a*b));
         if(count>=k)
-        printf("Win
+         printf("Win
 ");
-        else
-        printf("Lose
+         else
+         printf("Lose
 ");
     }
     return 0;
