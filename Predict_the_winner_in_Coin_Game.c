@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int n,m;
-    scanf("%d%d",&n,&m);
+    int m,n;
+    scanf("%d%d",&m,&n);
     if(m<=1 || n<=1)
     {
         printf("Player 2");
@@ -13,7 +13,7 @@ int main()
         {
             printf("Player 1");
         }
-        else
+        else 
         {
             printf("Player 2");
         }
